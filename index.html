@@ -12,7 +12,33 @@
         <div id="hero">
             <h1 id="h1-first-line">Generate a <br><mark id="h1-second-line">random password</mark></h1>
             <h3>Never use an insecure password again.</h3>
-            <button onclick="generatePassword()">Generate passwords</button>
+            <h3 id="password-parameters-label">Chose your password parameters:</h3>
+            <div id="password-parameters">
+                <div class="switch">
+                    Numbers?
+                    <label class="parameter">
+                        <input type="checkbox" onclick="numberSwitch()">
+                        <span class="slider"> </span>
+                    </label>
+                </div>
+                <div class="switch">
+                    Special characters?
+                    <label class="parameter">
+                        <input type="checkbox" onclick="specialCharactersSwitch()">
+                        <span class="slider"> </span>
+                    </label>
+                </div>
+                <div class="password-lenght"> 
+                    Number of characters:
+                    <div>
+                        <input type="text" id="password-lenght-textbox">
+                    </div>
+                </div>
+            </div>
+            <div id="btn-and-msg-part">
+                <button onclick="generatePassword()">Generate passwords</button>
+                <p id="password-requaiers">Passwords must be at least 8 characters long and can't be longer then 20 characters</p>
+            </div>
             <hr>
             <div id="password-fields">
                 <p id="first-password"></p>    

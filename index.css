@@ -9,7 +9,7 @@ h1 {
     height: 80px;
     font-weight: 800;
     font-family: 'Karla', sans-serif;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 h3 {
@@ -40,24 +40,31 @@ hr {
 }
 
 p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #D5D4D8;
+    margin: 10px 20px;
+    width: 60%;
+}
+
+#first-password, #second-password {
     border-radius: 5px;
     background: #273549;
     width: 220px;
     height: 40px;
-    text-align: center;
     top: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #55F991;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
+    
 }
 
 #hero {
-    height: 550px;
-    width: 550px;
+    height: 6000px;
+    width: 600px;
     background: #1F2937;
     font-family: Karla;
     padding: 120px 50px;
@@ -79,3 +86,117 @@ p {
     display: flex;
     justify-content: space-between;
 }
+
+#password-parameters-label {
+    margin-top: 50px;
+    color: #4ADF86;
+}
+
+#password-parameters {
+    color: #D5D4D8;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+
+}
+
+.parameter {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    position: relative;
+}
+
+.parameter input {
+    display: none;
+}
+
+.switch, .password-lenght {
+    width: calc(100%/3);
+}
+
+.slider {
+    width: 50px;
+    margin: 0 10px;
+    height: 20px;
+    border: 2px solid #D5D4D8;
+    border-radius: 30px;
+
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: auto;
+    bottom: 0;
+
+}
+
+
+.switch input[type="checkbox"] + .slider::after {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 1px;
+    bottom: 1px;
+    background: #D5D4D8;
+    border-radius: 30px;
+    transition: all 0.2s ease-in;
+}
+
+.switch input[type="checkbox"]:checked + .slider::after {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 31px; /*.slider width - slider:after width - 1 */
+    bottom: 1px;
+    border-radius: 30px;
+    background: #10B981;
+    transition: all 0.2s ease-in;
+}
+.switch input[type="checkbox"]:checked + .slider {
+    border: 2px solid #10B981;
+    transition: all 0.2s ease-in;
+}
+
+#password-lenght-textbox {
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+    background: #273549;
+    color: #55F991;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    box-lines: 0 0 3px white;
+}
+
+#password-lenght-textbox:focus {
+    outline: none;
+    border: 1px solid #D5D4D8;
+}
+
+#btn-and-msg-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.allert-message {
+    color: red;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+/* 
+        // messageWindow.textContent = "Wrong password parameters!";
+        // messageWindow.style.color = "red";
+        // messageWindow.style.fontSize = "25px"; */
+
+.bordered {
+    border: 2px dotted red;
+}
+
