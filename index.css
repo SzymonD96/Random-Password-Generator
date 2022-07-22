@@ -1,0 +1,81 @@
+
+body {
+    background: #1C1C1C;
+    display: block;
+    margin: 70px auto;
+}
+
+h1 {
+    height: 80px;
+    font-weight: 800;
+    font-family: 'Karla', sans-serif;
+    padding: 10px;
+}
+
+h3 {
+    color: #D5D4D8;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+button {
+    background: #10B981;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    height: 45px;
+    width: 200px;
+    
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background: #2F3E53;
+    margin: 35px 0;
+}
+
+p {
+    border-radius: 5px;
+    background: #273549;
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #55F991;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#hero {
+    height: 550px;
+    width: 550px;
+    background: #1F2937;
+    font-family: Karla;
+    padding: 120px 50px;
+    display: block;
+    margin: 70px auto;
+}
+
+
+#h1-first-line {
+    color: white;
+}
+
+#h1-second-line {
+    background: none;
+    color: #4ADF86;
+}
+
+#password-fields {
+    display: flex;
+    justify-content: space-between;
+}
